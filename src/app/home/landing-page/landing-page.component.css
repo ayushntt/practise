@@ -1,0 +1,125 @@
+.custom-select{ height:38px; padding: 7px;
+	font-size: 15px;
+	border: 1px solid #999;
+     border-radius:0;}
+    h1{ font-size:40px; color: #92A2bd }
+    .pagination a {
+        padding: 8px 10px;
+    }
+    .tabs-wrapper ul{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; margin-bottom: 0px;
+    }
+    .tabs-wrapper ul li{
+        font-size: 18px;
+        list-style: none;
+        margin-right: 5px;
+        padding: 8px 35.8px;
+        border: 3px #666;
+        background: #d9d9d9;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        /* text-transform: uppercase; */
+    }
+    .tabs-wrapper ul li:last-child{
+        margin-right: 0px;
+    }
+    .tabs-wrapper ul li a{
+        color:#999999;
+        text-decoration: none;
+    }
+    .tabs-wrapper ul li.active{
+         color:#444444;
+        border-bottom: 3px solid #3075ec;
+    }
+    
+    .tabs-wrapper ul li.active a{
+       color:#000;
+    }  
+    .help-icon{ position: absolute; width: 15%; top: 5px;
+        right:0; }
+        .header-section{position: relative; } 
+        .link a, .gridSection .show-invalid-add a{color:#429bf4; text-decoration: underline}
+    .gridSection .show-invalid-add a:hover, .link a:hover{ color:#000;}
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        
+        .tabs-wrapper ul li{
+            font-size: 16px;
+            list-style: none;
+          
+            padding: 8px 20px;
+           
+        }
+        .custom-button{padding: 6px 26px;}
+        .input-field label{ position: absolute;}
+        }
+
+        ::placeholder {
+            color: black;
+            opacity: 1; /* Firefox */
+        }
+        /* .col-md-7 {
+            flex: 0 0 58.333333%;
+            max-width: 45.333333%;
+        }
+     */
+
+
+     /* Body + Footer*/
+
+     .gridSection .show-invalid-add{width:165px;}
+
+.link a, .gridSection .show-invalid-add a{color:#429bf4; text-decoration: underline}
+    .gridSection .show-invalid-add a:hover, .link a:hover{ color:#000;}
+    .gutter-right{  padding-right: 0px;}
+	 .gutter-left{ padding-left: 0px;}
+	 .bodyTable{
+		display:block;
+		overflow:auto;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+        width:100%;
+        max-height: 968px;
+	  }
+	  .fixed_header thead tr{
+		display:block;
+	  }
+	  .headerTable ul li{ text-align: left; background:#c2c2c2; padding: 10px; color:#444; font-size: 14px; font-weight:bold; text-decoration:underline; }
+	   .headerTable ul li:first-child{ text-decoration: none}
+		 .bodyTable ul li{text-align: left;  padding:5px 10px;  color:#444; font-size: 13px; }
+		 .headerTable ul:hover{background:#c2c2c2;}
+		 .bodyTable ul:nth-child(even){background:  #e6e6e6	}
+	   .bodyTable ul:hover{cursor: pointer; background: #e0e0e0}
+	 .no-gutter{ padding:10px;}
+	 .no-gutter5{ padding:5px 10px;}
+	 .fixed_header td, .fixed_header th{ width:250px; word-wrap: break-word }
+	 .headerTable ul li, .bodyTable ul li{ list-style: none; float: left; word-wrap: break-word }
+	 .headerTable ul , .bodyTable ul{ margin: 0; padding: 0; border-bottom: solid 1px #ccc;overflow: hidden;}
+	 .headerTable{ clear: both; overflow: hidden;}
+	 .headerTable ul{ background:#c2c2c2;}
+	 .margintop3{margin-top: -3px;}
+	 .footer-grid{ min-height: inherit}
+      .error-icon{ width:25px; float: left; min-height: 15px;}
+     input.pull-left{ float: left; margin-top: 6px; margin-left: 5px}
+     .newCursor a:hover{ cursor: pointer;}
+     .fixforDivice{max-width: 1176px;}
+    .fixforDivice  .custom-input{ width:80%}
+    .headerTable ul li:hover{ cursor: pointer;}
+    .headerTable ul li.handcursorDisable, .headerTable ul li.handcursorDisable:hover{ cursor: inherit!important;}
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1199px)  {
+        
+                    .fixforDivice  .custom-input{ width:70%}
+                   .table-wrapper-scroll-y{zoom: 50%}
+                   .pos-right{ float: right; margin-top:10px}
+                    
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 767px)  {
+        
+        .fixforDivice .custom-select, .fixforDivice  .custom-input{ width:90%}
+      .table-wrapper-scroll-y{zoom: 30%}
+      .tabs-wrapper{ zoom: 50%;}
+      .custom-button{ padding: 6px 25px; margin-top: 10px;}
+        
+}

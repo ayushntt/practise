@@ -1,0 +1,98 @@
+<div class="tab-section">
+  <!-- tabs-start-->
+  <div class="tabs-wrapper">
+    <ul>
+     <!-- <li *ngFor="let tab of tabList; let i = index" [ngClass]="{active: tab.isActive}" (click)="changeTab(tab.tabCode, i)">{{tab.tabName}}</li>-->
+     <li >All Line Makes</li>
+     <li >BMW Car & Light Truck & BMWi</li>
+     <li >Mini</li>
+    </ul>
+  </div>
+  <!--tabs end -->
+
+</div>
+
+<div class="gridSection">
+  <h2 class="my-mbrm-3">Report List</h2>
+  <div class="table-wrapper-scroll-y">
+   
+          <div class="headerTable">
+            <ul>
+                <li class="col-sm-1 width25 no-gutter handcursorDisable">Select</li>
+                <li class="col-sm-2  no-gutter"> Report Month/Year</li> 
+                <li class="col-sm-1  no-gutter">Line Make</li>
+                <li class="col-sm-2  no-gutter">Status</li>
+                <li class="col-sm-1  no-gutter">Origin Type</li>
+                <li class="col-sm-2  no-gutter">Status Date</li>
+                <li class="col-sm-3  no-gutter"> User ID</li>
+                
+              </ul>
+              </div>
+              <div class="bodyTable" id="scrollHeight">
+                  <ul >
+                      <li class="col-sm-1 width25 no-gutter">
+                        <input name="select" type="checkbox" />
+                      </li>
+                      <li class="col-sm-2 no-gutter">
+                          <div class="link"><a (click)="updateModify()" href="javascript:void(0)">Mini Passenger Cars</a></div>
+                        
+                        
+                      </li>
+                      <li class="col-sm-1  no-gutter"> 
+
+                        April 2018
+                        
+                      </li>
+                      <li class="col-sm-2  no-gutter"> 
+
+                        
+                         Sent to BMWNA
+                         
+                      </li>
+                      <li class="col-sm-1  no-gutter"> 
+
+                       
+                         Donwload
+                        
+                      </li>
+                      <li class="col-sm-2  no-gutter"> 
+
+                       
+                         05/01/2018 02:35:30
+                       
+                      </li>
+                      <li class="col-sm-3  no-gutter"> 
+
+                        DMSUSER
+                      </li>
+                        
+                  </ul>     
+                  <div class="col-xs-12" style="text-align: center; color:red" *ngIf="recordsCount == 0">No
+                      data found
+                  </div>    
+                 
+              </div>
+
+  
+  </div>
+
+  <div class="footer-grid">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <input class="custom-input col-sm-2"  disabled="" name="item" type="text"> items selected</div>
+        <div class="col-sm-12 col-md-6">  <button type="button" class="custom-button pull-right button" (click)="create()">Create</button></div>
+        
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-lg-3">
+        <div class="link pull-left"><a (click)="selectAll()" href="javascript:void(0)">Select All </a> | <a (click)="clearAll()" href="javascript:void(0)">Clear All</a></div>
+      </div>
+      <div class="col-sm-6 btn-cont">
+        <button class="custom-button pull-left gutter-10 secondary" type="button"(click)="viewPrint()">Print</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
